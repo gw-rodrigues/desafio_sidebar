@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <aside id="nav-bar">
+            <nav role="navigation" aria-label="Primary Nav">
+                <section class="logo-bar">
+                    <div class="logo"><img src="assets/logo.svg" alt="Logo"></div>
+                    <button id="btn-menu" onclick="toogleMenu()"><img src="assets/menu.svg" alt="Menu"></button>
+                </section>
+                <ul class="nav-list">  
+                    <li>
+                        <img src="assets/search.svg" alt="">
+                        <a href="#">Buscar</a>
+                    </li>
+                    <li>
+                        <img src="assets/grid.svg" alt="">
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <img src="assets/pet.svg" alt="">
+                        <a href="#">Pets</a>
+                    </li>
+                    <li>
+                        <img src="assets/user.svg" alt="">
+                        <a href="#">Clientes</a></li>
+                    <li>
+                        <img src="assets/vet.svg" alt="">
+                        <a href="#">Vets</a>
+                    </li>
+                    <li>
+                        <img src="assets/settings.svg" alt="">
+                        <a href="#">Ajustes</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="logout" aria-label="Logout">
+                <div class="profile">
+                    <figure>
+                        <img src="assets/photo.jpg" alt="">
+                    </figure>
+                    <div class="description">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+                <a href="#"><img src="assets/log-out.svg" alt="Logout"></a>
+            </section>
+        </aside>
+        <main>
+            <h1>Dashboard</h1>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
