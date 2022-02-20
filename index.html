@@ -9,35 +9,47 @@
 </head>
 <body>
     <div class="container">
-        <aside id="nav-bar">
+        <aside id="nav-bar" class="closed">
             <nav role="navigation" aria-label="Primary Nav">
                 <section class="logo-bar">
                     <div class="logo"><img src="assets/logo.svg" alt="Logo"></div>
-                    <button id="btn-menu" onclick="toogleMenu()"><img src="assets/menu.svg" alt="Menu"></button>
+                    <button id="btn-menu" onclick="document.querySelector('#nav-bar').classList.toggle('closed');"><img src="assets/menu.svg" alt="Menu"></button>
                 </section>
                 <ul class="nav-list">  
                     <li>
-                        <img src="assets/search.svg" alt="">
-                        <a href="#">Buscar</a>
+                        <a href="#">
+                            <img src="assets/search.svg" alt="">
+                            <p>Buscar</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="assets/grid.svg" alt="">
-                        <a href="#">Dashboard</a>
+                        <a href="##">
+                            <img src="assets/grid.svg" alt="">
+                            <p>Dashboard</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="assets/pet.svg" alt="">
-                        <a href="#">Pets</a>
+                        <a href="###">
+                            <img src="assets/pet.svg" alt="">
+                            <p>Pets</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="assets/user.svg" alt="">
-                        <a href="#">Clientes</a></li>
+                        <a href="####">
+                            <img src="assets/user.svg" alt="">
+                            <p>Clientes</p>
+                        </a>
                     <li>
-                        <img src="assets/vet.svg" alt="">
-                        <a href="#">Vets</a>
+                        <a href="#####">
+                            <img src="assets/vet.svg" alt="">
+                            <p>Vets</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="assets/settings.svg" alt="">
-                        <a href="#">Ajustes</a>
+                        <a href="######">
+                            <img src="assets/settings.svg" alt="">
+                            <p>Ajustes</p>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -47,8 +59,8 @@
                         <img src="assets/photo.jpg" alt="">
                     </figure>
                     <div class="description">
-                        <p></p>
-                        <p></p>
+                        <p>Eleanor Pena</p>
+                        <p>Veterinaria</p>
                     </div>
                 </div>
                 <a href="#"><img src="assets/log-out.svg" alt="Logout"></a>
